@@ -1,0 +1,97 @@
+body {
+  background-color: lightblue;
+}
+
+.etchBorder {
+  display: block;
+  box-shadow: inset 0 0 1em red, 0 0 2em #b00012;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 800px;
+  height: 500px;
+  border: 80px solid #E83903;
+  border-radius: 2%;
+  background-color: grey;
+}
+
+.lead {
+  font-size: 0.700em;
+}
+
+.blockquote {
+  font-family: 'Marck Script', cursive;
+  font-size: 3em;
+}
+
+.interior {
+}
+
+.message {
+  color: #868e96;
+  font-size: 0.750em;
+}
+
+hr {
+  opacity: 0.1;
+}
+
+.leftCircle {
+  background: white;
+  position: absolute;
+  right: 98%;
+  top: 97%;
+  border-radius: 50%;
+  border-top: 16px solid #FCFFFA;
+  border-bottom: 16px solid #FCFFFA;
+  border-left: 16px solid #FFFEFA;
+  border-right: 16px solid #FFFEFA;
+  width: 90px;
+  height: 90px;
+  -webkit-animation: spin 15s cubic-bezier(0.47, 0, 0.75, 0.72) infinite alternate; /* Safari */
+  animation: spin 15s cubic-bezier(0.47, 0, 0.75, 0.72) infinite alternate;
+}
+
+.rightCircle {
+  background: white;
+  position: absolute;
+  left: 98%;
+  top: 97%;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border-top: 16px solid #FCFFFA;
+  border-bottom: 16px solid #FCFFFA;
+  border-left: 16px solid #FFFEFA;
+  border-right: 16px solid #FFFEFA;
+  -webkit-animation: spin 15s cubic-bezier(0.47, 0, 0.75, 0.72) infinite; /* Safari */
+  animation: spin 15s cubic-bezier(0.47, 0, 0.75, 0.72) infinite alternate-reverse;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+i {
+  margin: auto;
+  position: absolute;
+  bottom: 100%;
+  left: 45%;
+  right: 45%;
+  color: light-blue;
+}
+
+.btn {
+  position: absolute;
+  margin: 0 auto;
+  top: 106%;
+  left: 37%
+}
+
