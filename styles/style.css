@@ -16,7 +16,7 @@ body {
 }
 
 .lead {
-  font-size: 0.700em;
+  font-size: 0.500em;
 }
 
 .blockquote {
@@ -24,12 +24,9 @@ body {
   font-size: 3em;
 }
 
-.interior {
-}
-
 .message {
   color: #868e96;
-  font-size: 0.750em;
+  font-size: 0.500em;
 }
 
 hr {
@@ -90,8 +87,9 @@ i {
 
 .btn {
   position: absolute;
+  transform: translate(-50%,-50%);
   margin: 0 auto;
-  top: 106%;
-  left: 37%
+  top: 112%;
+  left: 50%;
 }
 
