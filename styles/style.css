@@ -17,6 +17,8 @@ body {
 
 .lead {
   font-size: 0.500em;
+  font-weight: 500;
+  color: #3b3e40;
 }
 
 .blockquote {
@@ -25,12 +27,15 @@ body {
 }
 
 .message {
-  color: #868e96;
+  color: #464a4ea3;
   font-size: 0.500em;
+  font-weight: 500;
 }
 
 hr {
-  opacity: 0.1;
+  height: 1px;
+  width: 60%;
+  opacity: 0.3;
 }
 
 .leftCircle {
@@ -38,13 +43,14 @@ hr {
   position: absolute;
   right: 98%;
   top: 97%;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   border-top: 16px solid #FCFFFA;
   border-bottom: 16px solid #FCFFFA;
   border-left: 16px solid #FFFEFA;
   border-right: 16px solid #FFFEFA;
-  width: 90px;
-  height: 90px;
+  box-shadow: 0.1px 0.1px 0.7px 0.3px;
   -webkit-animation: spin 15s cubic-bezier(0.47, 0, 0.75, 0.72) infinite alternate; /* Safari */
   animation: spin 15s cubic-bezier(0.47, 0, 0.75, 0.72) infinite alternate;
 }
@@ -61,6 +67,7 @@ hr {
   border-bottom: 16px solid #FCFFFA;
   border-left: 16px solid #FFFEFA;
   border-right: 16px solid #FFFEFA;
+  box-shadow: 0.1px 0.1px 0.7px 0.3px;
   -webkit-animation: spin 15s cubic-bezier(0.47, 0, 0.75, 0.72) infinite; /* Safari */
   animation: spin 15s cubic-bezier(0.47, 0, 0.75, 0.72) infinite alternate-reverse;
 }
@@ -77,19 +84,14 @@ hr {
 }
 
 i {
-  margin: auto;
   position: absolute;
+  margin-bottom: 20px;
   bottom: 100%;
-  left: 45%;
-  right: 45%;
-  color: light-blue;
+  left: 47%;
 }
 
 .btn {
   position: absolute;
   transform: translate(-50%,-50%);
-  margin: 0 auto;
   top: 112%;
-  left: 50%;
 }
-
