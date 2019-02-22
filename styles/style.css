@@ -1,41 +1,51 @@
 body {
   background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .etchBorder {
   display: block;
   box-shadow: inset 0 0 1em red, 0 0 2em #b00012;
   margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   width: 800px;
   height: 500px;
-  border: 80px solid #E83903;
+  border: 80px solid #e83903;
   border-radius: 2%;
   background-color: grey;
 }
 
+.interior {
+  margin-top: 30px;
+}
+
 .lead {
-  font-size: 0.500em;
+  font-size: 0.5em;
   font-weight: 500;
   color: #3b3e40;
 }
 
 .blockquote {
-  font-family: 'Marck Script', cursive;
+  font-family: "Marck Script", cursive;
   font-size: 3em;
 }
 
 .message {
   color: #464a4ea3;
-  font-size: 0.500em;
+  font-size: 0.5em;
   font-weight: 500;
 }
 
 hr {
   height: 1px;
   width: 60%;
-  opacity: 0.3;
+  opacity: 0;
 }
 
 .leftCircle {
@@ -46,12 +56,13 @@ hr {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  border-top: 16px solid #FCFFFA;
-  border-bottom: 16px solid #FCFFFA;
-  border-left: 16px solid #FFFEFA;
-  border-right: 16px solid #FFFEFA;
+  border-top: 16px solid #fcfffa;
+  border-bottom: 16px solid #fcfffa;
+  border-left: 16px solid #fffefa;
+  border-right: 16px solid #fffefa;
   box-shadow: 0.1px 0.1px 0.7px 0.3px;
-  -webkit-animation: spin 15s cubic-bezier(0.47, 0, 0.75, 0.72) infinite alternate; /* Safari */
+  -webkit-animation: spin 15s cubic-bezier(0.47, 0, 0.75, 0.72) infinite
+    alternate; /* Safari */
   animation: spin 15s cubic-bezier(0.47, 0, 0.75, 0.72) infinite alternate;
 }
 
@@ -63,24 +74,33 @@ hr {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  border-top: 16px solid #FCFFFA;
-  border-bottom: 16px solid #FCFFFA;
-  border-left: 16px solid #FFFEFA;
-  border-right: 16px solid #FFFEFA;
+  border-top: 16px solid #fcfffa;
+  border-bottom: 16px solid #fcfffa;
+  border-left: 16px solid #fffefa;
+  border-right: 16px solid #fffefa;
   box-shadow: 0.1px 0.1px 0.7px 0.3px;
   -webkit-animation: spin 15s cubic-bezier(0.47, 0, 0.75, 0.72) infinite; /* Safari */
-  animation: spin 15s cubic-bezier(0.47, 0, 0.75, 0.72) infinite alternate-reverse;
+  animation: spin 15s cubic-bezier(0.47, 0, 0.75, 0.72) infinite
+    alternate-reverse;
 }
 
 /* Safari */
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 i {
@@ -92,6 +112,6 @@ i {
 
 .btn {
   position: absolute;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   top: 112%;
 }
