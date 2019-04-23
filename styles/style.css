@@ -1,5 +1,10 @@
+htlm {
+  height: 100vh;
+  width: 100vw;
+}
+
 body {
-  background-color: lightblue;
+  background-color: #add8e68a;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -10,10 +15,6 @@ body {
   box-shadow: inset 0 0 1em red, 0 0 2em #b00012;
   margin: auto;
   position: relative;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   width: 800px;
   height: 500px;
   border: 80px solid #e83903;
@@ -32,7 +33,7 @@ body {
 }
 
 .blockquote {
-  font-family: "Marck Script", cursive;
+  font-family: 'Marck Script', cursive;
   font-size: 3em;
 }
 
@@ -103,11 +104,12 @@ hr {
   }
 }
 
-i {
+a img {
+  height: 4em;
+  width: 4em;
   position: absolute;
-  margin-bottom: 20px;
   bottom: 100%;
-  left: 47%;
+  left: 45%;
 }
 
 .btn {
